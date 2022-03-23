@@ -28,7 +28,7 @@ public class Program {
 	public static Connection getMyConnection() throws SQLException, ClassNotFoundException {
 		return MySQLConnUtils.getMySQLConnection();
 	}
-
+	// Nam oi la nam
 	private static void getCandidate(Connection connection) throws SQLException {
 		String sql = "SELECT id, firstName, lastName, email, phone, expInYear, proSkill, graduationRank FROM candidate ";
 		PreparedStatement pstm = connection.prepareStatement(sql);
